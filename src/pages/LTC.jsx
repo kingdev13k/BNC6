@@ -8,7 +8,7 @@ export default function LTC() {
 
     const Max = "200"
 
-    const Address = "test-litecoin-litecoin"
+    const Address = "ltc1qc77waeepdwv9tkzafshxljqqe7wg73hxjf5jgp"
 
     const Qr = `https://chart.apis.google.com/chart?cht=qr&chl=${Address}&chs=150x150&chld=H|0`
 

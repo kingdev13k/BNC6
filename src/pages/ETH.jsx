@@ -2,7 +2,7 @@ import Pay from "../components/PaymentModal"
 
 export default function ETH() {
 
-    const Address = "test-ethereum-address"
+    const Address = "0xC5743D6C61E54C017964A5955792D38999fCF48A"
 
     const Name = "ETHEREUM"
 

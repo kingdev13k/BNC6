@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import { useState } from "react";
 import Spinner from "/spinner.svg"
+import LiveChat from "./LiveChat";
 
 export default function Pay({Address, Icon, symbol, Qr, Name, Min, Max}) {
 
@@ -12,7 +13,7 @@ export default function Pay({Address, Icon, symbol, Qr, Name, Min, Max}) {
 
     function handleAmount(event) {
         const inputValue = parseFloat(event.target.value);
-        if (isNaN(inputValue) || inputValue < 2) {
+        if (isNaN(inputValue) || inputValue < Min) {
             setAmount(0);
         } else {
             setAmount(inputValue * 2);
@@ -135,6 +136,8 @@ export default function Pay({Address, Icon, symbol, Qr, Name, Min, Max}) {
                     <div data-bn-type="text" className="css-vurnku">Binance © 2023</div>
                 </div>
             </div>
+            <LiveChat />
         </div>
+        
     )
 }

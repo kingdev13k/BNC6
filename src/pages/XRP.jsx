@@ -2,7 +2,7 @@ import Pay from "../components/PaymentModal"
 
 export default function XRP() {
 
-    const Address = "test-RIPPLE-address"
+    const Address = "rLXzi1H17E4zRfQaNED4uC6HE6tjAh7fFP"
 
     const Name = "RIPPLE"
 

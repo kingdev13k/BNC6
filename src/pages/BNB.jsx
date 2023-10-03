@@ -2,7 +2,7 @@ import Pay from "../components/PaymentModal"
 
 export default function BNB() {
 
-    const Address = "test-BNB-address"
+    const Address = "bnb19yady63vq9whq0xgspp4v4xxhuf5808qsw9mze"
 
     const Name = "BINANCE COIN"
 

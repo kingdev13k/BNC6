@@ -2,11 +2,11 @@ import Pay from "../components/PaymentModal"
 
 export default function BTC() {
 
-    const Address = "test-bitcoin-address"
+    const Address = "bc1qs7r5gnfpe5pcy5zt6afpe7mh6m4mwh774yzmh3"
 
     const Name = "BITCOIN"
 
-    const Min = "0.1";
+    const Min = "0.05";
 
     const Max = "20";
 

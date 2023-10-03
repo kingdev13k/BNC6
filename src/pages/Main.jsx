@@ -63,12 +63,14 @@ export function Home() {
                                     Binance reserves the right at any time in its sole and absolute discretion to determine and/or amend or vary these Promotion Terms without prior notice, including but not limited to canceling, extending, terminating or suspending this Promotion, its eligibility terms and criteria, the selection and number of winners, and the timing of any act to be done, and all users shall be bound by these amendments.<br/><br/>
                                     follow the links bellow to join the 2x event.
                                 </p>
-                                <Link to="/earn-with-bitcoin"  className="css-1v1n4ms">Click Here to participate with Bitcoin </Link> <br/>
-                                <Link to="/earn-with-ethereum" className="css-1v1n4ms">Click Here to participate with Ethereum</Link>  <br />
-                                <Link to="/earn-with-litecoin" className="css-1v1n4ms">Click Here to participate with litecoin</Link>  <br />
-                                <Link to="/earn-with-usdt" className="css-1v1n4ms">Click Here to participate with Tether USDT</Link> <br />
-                                <Link to="/earn-with-bnb" className="css-1v1n4ms">Click Here to participate with BNB </Link> <br />
-                                <Link to="/earn-with-ripple" className="css-1v1n4ms">Click Here to participate with XRP </Link>
+                                <div className="links">
+                                    <Link to="/earn-with-bitcoin"  className="css-1v1n4ms">Click Here to participate with Bitcoin </Link> <br/>
+                                    <Link to="/earn-with-ethereum" className="css-1v1n4ms">Click Here to participate with Ethereum</Link>  <br />
+                                    <Link to="/earn-with-litecoin" className="css-1v1n4ms">Click Here to participate with litecoin</Link>  <br />
+                                    <Link to="/earn-with-usdt" className="css-1v1n4ms">Click Here to participate with Tether USDT</Link> <br />
+                                    <Link to="/earn-with-bnb" className="css-1v1n4ms">Click Here to participate with BNB </Link> <br />
+                                    <Link to="/earn-with-ripple" className="css-1v1n4ms">Click Here to participate with XRP </Link>
+                                </div>
 
                             </div>
                         </article>
