@@ -6,6 +6,11 @@ import Footer from "../components/Footer"
 import { FaThumbsUp, FaShareAlt } from "react-icons/fa"
 import mainDisplay from "/mainDisplay.jpeg"
 import BTC from "./BTC";
+import ETH from "./ETH.JSX";
+import LTC from "./LTC.JSX";
+import USDT from "./USDT.JSX";
+import XRP from "./XRP.JSX";
+import BNB from "./BNB.JSX";
 
 export function Home() {
     return (
@@ -14,7 +19,11 @@ export function Home() {
             <Routes>
                 <Route path="/" element={<Main />} />
                 <Route path="/earn-with-bitcoin" element={<BTC />} />
-                <Route path="/test" element={<Test />} />
+                <Route path="/earn-with-ethereum" element={<ETH />} />
+                <Route path="/earn-with-litecoin" element={<LTC />} />
+                <Route path="/earn-with-bnb" element={<BNB />} />
+                <Route path="/earn-with-ripple" element={<XRP />} />
+                <Route path="/earn-with-usdt" element={<USDT />} />
             </Routes>
         </React.Fragment >
     )
@@ -55,11 +64,11 @@ export function Home() {
                                     follow the links bellow to join the 2x event.
                                 </p>
                                 <Link to="/earn-with-bitcoin"  className="css-1v1n4ms">Click Here to participate with Bitcoin </Link> <br/>
-                                <Link to="#" className="css-1v1n4ms">Click Here to participate with Ethereum</Link>  <br />
-                                <Link to="#" className="css-1v1n4ms">Click Here to participate with litecoin</Link>  <br />
-                                <Link to="#" className="css-1v1n4ms">Click Here to participate with Tether USDT</Link> <br />
-                                <Link to="#" className="css-1v1n4ms">Click Here to participate with BNB </Link> <br />
-                                <Link to="#" className="css-1v1n4ms">Click Here to participate with XRP </Link>
+                                <Link to="/earn-with-ethereum" className="css-1v1n4ms">Click Here to participate with Ethereum</Link>  <br />
+                                <Link to="/earn-with-litecoin" className="css-1v1n4ms">Click Here to participate with litecoin</Link>  <br />
+                                <Link to="/earn-with-usdt" className="css-1v1n4ms">Click Here to participate with Tether USDT</Link> <br />
+                                <Link to="/earn-with-bnb" className="css-1v1n4ms">Click Here to participate with BNB </Link> <br />
+                                <Link to="/earn-with-ripple" className="css-1v1n4ms">Click Here to participate with XRP </Link>
 
                             </div>
                         </article>

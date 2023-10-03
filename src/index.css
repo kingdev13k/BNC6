@@ -8491,6 +8491,345 @@ html body {
   order: 2;
 }
 
+.request .waiting {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  flex-shrink: 0
+}
+
+.request .waiting img {
+  animation: rotateAnimation 10s linear infinite
+}
+
+.request .infoBlock {
+  display: grid;
+  grid-template-areas: "wallet qr" "amount qr";
+  align-items: flex-end;
+  grid-template-columns: auto clamp(109px, 98.1995px + 2.5413vw, 129px);
+  gap: 15px 20px;
+  margin-bottom: 15px
+}
+
+.request .infoBlock>div:nth-child(1) {
+  grid-area: wallet
+}
+
+.request .infoBlock>div:nth-child(2) {
+  grid-area: amount
+}
+
+.request .infoBlock>div:nth-child(3) {
+  grid-area: qr
+}
+
+.request .infoBlock canvas {
+  width: clamp(109px, 98.1995px + 2.5413vw, 129px) !important;
+  height: auto !important;
+  aspect-ratio: 1/1
+}
+
+@media (max-width: 769px) {
+  .request .infoBlock {
+    grid-template-areas: "qr" "wallet" "amount";
+    grid-template-columns: 1fr;
+    align-items: flex-start
+  }
+}
+
+.request .infoBlock .qr {
+  position: relative;
+  justify-self: flex-start
+}
+
+.request .infoBlock .qr img {
+  display: block
+}
+
+.request .infoBlock .qrCoin {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 25%;
+  aspect-ratio: 1/1;
+  pointer-events: none
+}
+
+.request .infoBlock .infoBlockInput {
+  display: flex;
+  flex-direction: column
+}
+
+.request .infoBlock .infoBlockInput.infoBlockInputSplit {
+  flex-direction: row;
+  gap: 10px
+}
+
+@media (max-width: 769px) {
+  .request .infoBlock .infoBlockInput.infoBlockInputSplit {
+    display: grid;
+    grid-template-areas: "amount amount" "button waiting"
+  }
+}
+
+.request .infoBlock .infoBlockInput.infoBlockInputSplit>div {
+  grid-area: amount
+}
+
+.request .infoBlock .infoBlockInput.infoBlockInputSplit>button {
+  grid-area: button
+}
+
+.request .infoBlock .infoBlockInput.infoBlockInputSplit>span {
+  grid-area: waiting;
+  justify-self: center;
+  align-self: center
+}
+
+@media (max-width: 426px) {
+  .request .infoBlock .infoBlockInput.infoBlockInputSplit {
+    display: flex;
+    flex-direction: column
+  }
+}
+
+.request .infoBlock .infoBlockInput p {
+  font-weight: 500;
+  font-size: clamp(12px, 10.9199px + .2541vw, 14px);
+  line-height: clamp(16px, 14.3799px + .3812vw, 19px);
+  margin-bottom: 10px
+}
+
+.request .infoBlock .infoBlockInput button {
+  flex-shrink: 0;
+  line-height: 40px;
+  padding: 0 20px;
+  background: linear-gradient(224.83deg, #bf1212 3.65%, #bf1212 100%);
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: clamp(12px, 10.9199px + .2541vw, 14px);
+  color: #fff;
+  cursor: pointer;
+  transition: .2s background
+}
+
+.request .infoBlock .infoBlockInput button:hover {
+  background: linear-gradient(224.83deg, #FF8086 3.65%, #FF6369 100%);
+  color: #fff
+}
+
+.request .infoBlock .infoBlockInput .inputGroup {
+  grid-area: input
+}
+
+.request .infoBlock .infoBlockInput button {
+  grid-area: sent
+}
+
+.request .infoBlock .infoBlockInput .waiting {
+  grid-area: waiting
+}
+
+.request .infoBlock .infoBlockInput .waiting img {
+  animation: waitingAnimation 10s linear infinite
+}
+
+.request .infoBlock .infoBlockInput .inputGroup {
+  background: rgba(255, 255, 255, .05);
+  border: 1px solid #DFDFDF;
+  border-radius: 5px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding: 0 12px 0 10px;
+  font-weight: 600;
+  font-size: clamp(12px, 9.8399px + .5083vw, 16px);
+  line-height: clamp(16px, 12.7598px + .7624vw, 22px);
+  width: 100%
+}
+
+.request .infoBlock .infoBlockInput .inputValue {
+  user-select: text;
+  cursor: text
+}
+
+.request .infoBlock .infoBlockInput .inputCurrency {
+  color: #b3b3b3;
+  margin-left: 3px;
+  user-select: none
+}
+
+.request .infoBlock .infoBlockInput .inputAction {
+  margin-left: auto;
+  cursor: pointer
+}
+
+@keyframes waitingAnimation {
+  0% {
+    transform: rotate(0)
+  }
+
+  to {
+    transform: rotate(360deg)
+  }
+}
+
+.request .errorText {
+  background: rgba(243, 186, 47, .05);
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: clamp(10px, 8.3799px + .3812vw, 13px);
+  line-height: 150%;
+  color: #bf1212;
+  padding: 12px clamp(15px, 6.3596px + 2.033vw, 31px) 12px 15px
+}
+
+@media (max-width: 426px) {
+  .request .errorText {
+    margin: 0 clamp(-20px, -22.7001px + .6353vw, -15px);
+    padding: 12px clamp(15px, 22.7001px + -.6353vw, 20px) 12px clamp(15px, 22.7001px + -.6353vw, 20px);
+    border-radius: 0
+  }
+}
+
+.request .formSingle {
+  padding-bottom: clamp(30px, 19.1995px + 2.5413vw, 50px);
+  display: flex;
+  flex-direction: column
+}
+
+.request .formDouble {
+  display: grid;
+  grid-template-columns: clamp(320px, -27.2px + 35vw, 397px) auto;
+  align-items: flex-start;
+  gap: 18px
+}
+
+@media (max-width: 993px) {
+  .request .formDouble {
+    grid-template-columns: 1fr
+  }
+}
+
+.request .formDouble .formDoubleItem {
+  display: flex;
+  flex-direction: column;
+  gap: 18px
+}
+
+.request .formDouble .formCalculatorItem {
+  padding-bottom: clamp(30px, 19.1995px + 2.5413vw, 50px)
+}
+
+.request .bottomButton {
+  font-weight: 600;
+  font-size: clamp(12px, 10.9199px + .2541vw, 14px);
+  line-height: clamp(40px, 38.9199px + .2541vw, 42px);
+  padding: 0 30px;
+  background: linear-gradient(224.83deg, #bf1212 3.65%, #bf1212 100%);
+  border-radius: 5px;
+  color: #fff;
+  margin-top: 16px;
+  align-self: center;
+  cursor: pointer;
+  text-align: center;
+  display: block
+}
+
+.request .bottomButton:hover {
+  background: linear-gradient(224.83deg, #FF8086 3.65%, #FF6369 100%);
+  color: #fff
+}
+
+@media (max-width: 769px) {
+  .request .bottomButton {
+    width: 100%
+  }
+}
+
+.requestCenter {
+  max-width: 723px;
+  margin: 0 auto
+}
+
+.copyComponent {
+  cursor: pointer;
+  position: relative
+}
+
+.copyComponent img {
+  transition: .2s opacity
+}
+
+.copyComponent.loading img {
+  opacity: .4
+}
+
+.copyComponent.loading span {
+  animation: copyComponentAnimation 1s
+}
+
+.copyComponent span {
+  position: absolute;
+  bottom: 100%;
+  opacity: 0;
+  left: 50%;
+  transform: translate(-50%) translateY(0);
+  pointer-events: none;
+  font-size: 12px;
+  padding: 4px 6px;
+  background-color: #bf12121a;
+  color: #fff;
+  line-height: 1;
+  border-radius: 4px
+}
+
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.copyComponent.left span {
+  right: 100%;
+  top: 50%;
+  left: auto;
+  bottom: auto
+}
+
+.calculatorInput .name {
+  font-weight: 600;
+  font-size: clamp(11px, 8.2999px + .6353vw, 16px);
+  line-height: clamp(15px, 11.2198px + .8895vw, 22px)
+}
+
+.coinsList .coinItem .name,
+.coinsList .coinItem .code {
+  font-weight: 600;
+  font-size: clamp(12px, 9.8399px + .5083vw, 16px);
+  line-height: clamp(16px, 12.7598px + .7624vw, 22px)
+}
+
+@keyframes copyComponentAnimation {
+  0% {
+    transform: translate(-50%) translateY(5px);
+    opacity: 1
+  }
+
+  to {
+    transform: translate(-50%) translateY(-5px);
+    opacity: 0
+  }
+}
+
+.formInput .clicked {
+  background: #008f20;
+  color: #a5a5a5;
+}
+
 @keyframes slide-down-custom {
   0% {
     bottom: 610px !important;
@@ -8520,3 +8859,7 @@ html body {
     bottom: 0px;
   }
 }
+
+/* .font-large {
+  font-size: 16px;
+} */
