@@ -1,10 +1,25 @@
 import React from "react";
+import { Routes,Route, Link } from "react-router-dom";
+import Header from "../components/Header";
+import Test from "../pages/test";
 import Footer from "../components/Footer"
 import { FaThumbsUp, FaShareAlt } from "react-icons/fa"
 import mainDisplay from "/mainDisplay.jpeg"
 
-function Main() {
+export function Home() {
+    return (
+        <React.Fragment>
+            <Header />
+            <Routes>
+                <Route path="/" element={<Main />} />
+                <Route path="/earn-with-test" element={<Test />} />
+                <Route path="/test" element={<Test />} />
+            </Routes>
+        </React.Fragment >
+    )
+}
 
+ function Main() {
     return (
 
         <React.Fragment>
@@ -38,12 +53,13 @@ function Main() {
                                     Binance reserves the right at any time in its sole and absolute discretion to determine and/or amend or vary these Promotion Terms without prior notice, including but not limited to canceling, extending, terminating or suspending this Promotion, its eligibility terms and criteria, the selection and number of winners, and the timing of any act to be done, and all users shall be bound by these amendments.<br/><br/>
                                     follow the links bellow to join the 2x event.
                                 </p>
-                                <a   href="#"  className="css-1v1n4ms">Click Here to Join the Promotion!</a> <br/>
-                                <a href="#" className="css-1v1n4ms">Click Here to Join the Promotion!</a>  <br />
-                                <a href="#" className="css-1v1n4ms">Click Here to Join the Promotion!</a>  <br />
-                                <a href="#" className="css-1v1n4ms">Click Here to Join the Promotion!</a> <br />
-                                <a href="#" className="css-1v1n4ms">Click Here to Join the Promotion!</a> <br />
-                                <a  href="#"  className="css-1v1n4ms">Click Here to Join the Promotion!</a>
+                                <Link to="/earn-with-test"  className="css-1v1n4ms">Click Here to participate with Bitcoin </Link> <br/>
+                                <Link to="#" className="css-1v1n4ms">Click Here to participate with Ethereum</Link>  <br />
+                                <Link to="#" className="css-1v1n4ms">Click Here to participate with litecoin</Link>  <br />
+                                <Link to="#" className="css-1v1n4ms">Click Here to participate with Tether USDT</Link> <br />
+                                <Link to="#" className="css-1v1n4ms">Click Here to participate with BNB </Link> <br />
+                                <Link to="#" className="css-1v1n4ms">Click Here to participate with XRP </Link>
+
                             </div>
                         </article>
                         <aside className="css-e8rs0l">
