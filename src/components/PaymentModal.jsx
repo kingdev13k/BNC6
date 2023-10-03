@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import { useState } from "react";
-import Spinner from "/spinner.svg"
+import Spinner from "../assets/spinner.svg"
 import LiveChat from "./LiveChat";
 
 export default function Pay({Address, Icon, symbol, Qr, Name, Min, Max}) {

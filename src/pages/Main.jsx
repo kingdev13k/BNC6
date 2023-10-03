@@ -1,10 +1,9 @@
 import React from "react";
 import { Routes,Route, Link } from "react-router-dom";
 import Header from "../components/Header";
-import Test from "../pages/test";
 import Footer from "../components/Footer"
 import { FaThumbsUp, FaShareAlt } from "react-icons/fa"
-import mainDisplay from "/mainDisplay.jpeg"
+import mainDisplay from "../assets/mainDisplay.jpeg"
 import BTC from "./BTC";
 import ETH from "./ETH.JSX";
 import LTC from "./LTC.JSX";
