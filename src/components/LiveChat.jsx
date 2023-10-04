@@ -5,8 +5,8 @@ export default function LiveChat() {
     return (
         <>
             <TawkMessengerReact
-                propertyId="651c8434e6bed319d0059320"
-                widgetId="1hbrm8s5g" />
+                propertyId="64f72647a91e863a5c11c333"
+                widgetId="default" />
            
         </>
     )
