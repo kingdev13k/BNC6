@@ -228,34 +228,34 @@ function Footer() {
                         <div className="css-1k2y5yk"></div>
                         <div className="css-6ivo61">
                             <div data-bn-type="text" className="css-fo5ix1">Community</div>
-                            <div className="css-vurnku"><a href="https://discord.gg/jE4wt8g2H2" target="_self"
+                            <div className="css-vurnku"><a href="#" target="_self"
                                 id="footer_menu_community_h-discord" className="css-1ug574w">
                                 <FaDiscord className="css-jw93ck" />
-                            </a><a href="https://www.binance.com/en/community" target="_self"
+                            </a><a href="#" target="_self"
                                 id="footer_menu_community_h-telegram" className="css-1ug574w">
                                     <FaTelegram className="css-jw93ck" />
-                                   </a><a href="https://www.tiktok.com/@binance?lang=en" target="_self"
+                                   </a><a href="#lang=en" target="_self"
                                         id="footer_menu_community_h-tiktok" className="css-1ug574w">
                                     <FaTiktok className="css-jw93ck" />
-                                            </a><a href="https://www.facebook.com/binance" target="_self"
+                                            </a><a href="#" target="_self"
                                         id="footer_menu_community_h-facebook" className="css-1ug574w">
                                     <FaFacebook className="css-jw93ck" />
-                                            </a><a href="https://twitter.com/binance" target="_self"
+                                            </a><a href="#" target="_self"
                                         id="footer_menu_community_h-twitter" className="css-1ug574w">
                                     <FaTwitter className="css-jw93ck" />
-                                            </a><a href="https://www.reddit.com/r/binance" target="_self"
+                                            </a><a href="#" target="_self"
                                         id="footer_menu_community_h-reddit" className="css-1ug574w">
                                     <FaReddit className="css-jw93ck" />
-                                            </a><a href="https://www.instagram.com/Binance/" target="_self"
+                                            </a><a href="#" target="_self"
                                         id="footer_menu_community_h-instagram" className="css-1ug574w">
                                     <FaInstagram className="css-jw93ck" />
-                                            </a><a href="https://coinmarketcap.com/exchanges/binance/" target="_self"
+                                            </a><a href="#" target="_self"
                                         id="footer_menu_community_h-coinmarketcap" className="css-1ug574w">
                                     <SiCoinmarketcap className="css-jw93ck" />  
-                                            </a><a href="https://vk.com/binance" target="_self"
+                                            </a><a href="#" target="_self"
                                         id="footer_menu_community_h-vk" className="css-1ug574w">
                                     <FaVk className="css-jw93ck" />
-                                            </a><a href="https://www.youtube.com/binanceyoutube" target="_self"
+                                            </a><a href="#" target="_self"
                                         id="footer_menu_community_h-youtube" className="css-1ug574w">
                                     <FaYoutube className="css-jw93ck" />
                                             </a></div>
