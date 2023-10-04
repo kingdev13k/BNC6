@@ -10,10 +10,10 @@ import {
      FaTwitter,
      FaYoutube,
      FaVk,
-    FaPlus
     } from "react-icons/fa"
 
 import { SiCoinmarketcap } from "react-icons/si";
+import { BiPlus } from "react-icons/bi"
 
 function Footer() {
     return (
@@ -26,7 +26,7 @@ function Footer() {
                                 <div data-expand="false" className="css-sjahn1">
                                     <div className="css-kbv4gt">
                                         <div data-bn-type="text" className="css-mpghe">About Us</div>
-                                        <FaPlus className="css-zntp1k" />
+                                        <BiPlus className="css-zntp1k" />
                                     </div>
                                     <div className="css-1yk9mh2"><a id="footer_menu_item_ba-About" target="_self"
                                         href="https://www.binance.com/en/about" className="css-1fbr1vy">About</a><a
@@ -68,7 +68,7 @@ function Footer() {
                                 <div data-expand="false" className="css-sjahn1">
                                     <div className="css-kbv4gt">
                                         <div data-bn-type="text" className="css-mpghe">Products</div>
-                                        <FaPlus className="css-zntp1k" />
+                                        <BiPlus className="css-zntp1k" />
                                     </div>
                                     <div className="css-1yk9mh2"><a id="footer_menu_item_ba-Exchange" target="_self"
                                         href="https://www.binance.com/en/trade"
@@ -109,7 +109,7 @@ function Footer() {
                                 <div data-expand="false" className="css-sjahn1">
                                     <div className="css-kbv4gt">
                                         <div data-bn-type="text" className="css-mpghe">Service</div>
-                                        <FaPlus className="css-zntp1k" />
+                                        <BiPlus className="css-zntp1k" />
                                     </div>
                                     <div className="css-1yk9mh2"><a id="footer_menu_item_ba-Download" target="_self"
                                         href="https://www.binance.com/en/download"
@@ -152,7 +152,7 @@ function Footer() {
                                 <div data-expand="false" className="css-sjahn1">
                                     <div className="css-kbv4gt">
                                         <div data-bn-type="text" className="css-mpghe">Support</div>
-                                        <FaPlus className="css-zntp1k" />
+                                        <BiPlus className="css-zntp1k" />
                                     </div>
                                     <div className="css-1yk9mh2"><a id="footer_menu_item_footer_support_request_feature"
                                         target="_self"
@@ -184,7 +184,7 @@ function Footer() {
                                 <div data-expand="false" className="css-sjahn1">
                                     <div className="css-kbv4gt">
                                         <div data-bn-type="text" className="css-mpghe">Learn</div>
-                                        <FaPlus className="css-zntp1k" />
+                                        <BiPlus className="css-zntp1k" />
                                     </div>
                                     <div className="css-1yk9mh2"><a id="footer_menu_item_ba-learn-earn-title"
                                         target="_self" href="https://academy.binance.com/en/learn-and-earn"
