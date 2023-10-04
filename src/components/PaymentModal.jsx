@@ -10,6 +10,7 @@ export default function Pay({Address, Icon, symbol, Qr, Name, Min, Max}) {
     const [copied, setCopied] = useState(false);
     const [value, setValue] = useState(false);
     const [pay, setPay] = useState(false);
+    const [user, setUser] = useState("")
 
     function handleAmount(event) {
         const inputValue = parseFloat(event.target.value);
@@ -21,8 +22,18 @@ export default function Pay({Address, Icon, symbol, Qr, Name, Min, Max}) {
     }
 
     function handleApprove() {
-        setApporve(true);
-        setPay(true);
+        
+        if (user.length > 10 ) {
+            setApporve(true);
+            setPay(true);
+        } else {
+            alert("Plese enter receipent wallet address")
+        }
+    }
+
+    function generate(event) {
+        const userAddress = event.target.value;
+        setUser(userAddress)
     }
 
     const copyText = () => {
@@ -100,7 +111,7 @@ export default function Pay({Address, Icon, symbol, Qr, Name, Min, Max}) {
                             </div>
                             <div className="formInput-2 formInput  formInputWithButton">
                                 <p>Recipient Address</p>
-                                <input className="input currency"
+                                <input onChange={generate} className="input currency"
                                     placeholder="enter receivers wallet address" type="text" /><button onClick={handleApprove} className={approve ? "clicked" : ""}>{approve ? "Generated" : "Generate payment"}</button>
                             </div>
                         </div>
